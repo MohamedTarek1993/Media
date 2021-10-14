@@ -1,0 +1,2711 @@
+:root {
+    --color-primary: #3f4394;
+    --color-secound: #151534;
+    --color-third: #4ab9b1;
+    --color-fourth: #9898ae;
+    --color-fifth: #cecece;
+    --color-six:#626281 ;
+    --back-ground: #fafafa;
+    
+  }
+  
+  @font-face {
+    font-family: "bold";
+    src: url("../fonts/ArbFONTS-Almarai-Bold.ttf");
+  }
+  
+  @font-face {
+    font-family: "regular";
+    src: url("../fonts/ArbFONTS-Almarai-Regular.ttf");
+  }
+  
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-size: 100%;
+    max-width: 100%;
+    list-style: none;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  hr{
+    border: 1.5px solid var(--color-fifth) !important;
+  }
+  /*--------------------------------------------------------- start hospital section----------------------------- */
+
+/* --------------------------start Al Safwa Specialized Hospital------------------------- */
+.hospital-datawork {
+    text-align: start;
+  }
+  /* start upload */
+  .hospital-datawork .hospital-upload {
+    background-color: var(--back-ground);
+  }
+  .hospital-datawork .hospital-upload h1 {
+    font-family: "bold";
+    text-align: start;
+    margin: 30px 30px 0 0;
+    position: relative;
+    top: 130px;
+    z-index: 3;
+    font-size: 48px;
+  }
+  .hospital-datawork .hospital-upload .avatar-upload {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .hospital-datawork .hospital-upload .avatar-edit {
+    position: absolute;
+    left: 45px;
+    z-index: 5;
+    top: 24px;
+  }
+  .hospital-datawork .hospital-upload input {
+    display: none;
+  }
+  .hospital-datawork .hospital-upload + label {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin-bottom: 0;
+    border-radius: 100%;
+    background: #ffffff;
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+  }
+  .hospital-datawork .hospital-upload input:hover {
+    background: #f1f1f1;
+    border-color: #d6d6d6;
+  }
+  .hospital-datawork .hospital-upload input:after {
+    content: "\f040";
+    font-family: "FontAwesome";
+    color: #757575;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+  }
+ 
+  .hospital-datawork .hospital-upload .avatar-edit svg {
+    margin: 0 auto;
+    position: relative;
+    left: 113px;
+    top: 68px;
+    font-size: 32px;
+    color: transparent;
+    stroke: var(--color-primary);
+    stroke-width: 30px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    padding: 2%;
+    cursor: pointer;
+  }
+  
+  .hospital-datawork .hospital-upload .avatar-preview {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background-color: var(--back-ground);
+  }
+  .hospital-datawork .hospital-upload .avatar-preview .preview {
+    display: flex !important;
+  }
+  .hospital-datawork .hospital-upload .avatar-preview > div {
+    width: 100%;
+    height: 100%;
+    margin:  auto ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  
+  }
+  /* finish upload */
+/* start hospital-tabs */
+.hospital-datawork .hospital-tabs {
+    margin-top: 40px;
+  }
+  .hospital-datawork .hospital-tabs .nav-tabs {
+    border: none;
+    font-family: "bold";
+    margin-bottom: 76px;
+  }
+  .hospital-datawork .hospital-tabs .nav-tabs .nav-link {
+    color: var(--color-fourth);
+    /* border: 1px solid #F4F4F4 ; */
+    box-shadow: 0 3px 6px rgb(123 123 123 / 0.16);
+
+  }
+  .hospital-datawork .hospital-tabs .nav-tabs .nav-link.active {
+    color: var(--color-secound);
+    border: 1px solid #F4F4F4 ;
+  }
+  .hospital-datawork .hospital-tabs .nav-tabs .nav-link,
+  .hospital-datawork .hospital-tabs .nav-tabs .nav-link.active {
+    font-size: 20px;
+    margin:auto;
+    text-align: center;
+    height: fit-content;
+    padding: 25px;
+  }
+  .hospital-datawork .hospital-tabs .tab-pane .img img {
+    width: 100%;
+    height: 100%;
+  }
+  /* =========================start my time table */
+  .hospital-datawork .hospital-tabs .tab-pane .my-timetable {
+    border: 1px solid #E8E8E8 ;
+    margin:30px 0;
+    width: 100%;
+  }
+  .hospital-datawork .hospital-tabs .tab-pane .my-timetable .heading {
+    display: flex;
+    justify-content: space-between;
+    padding:  10px;
+    background-color:#f8f8f8 ;
+  }
+  .hospital-datawork .hospital-tabs .tab-pane .my-timetable .heading h4 {
+    font-family: "bold";
+    font-size: 24px;
+    color: var(--color-primary);
+    margin-top: 10px;
+  }
+  .hospital-datawork .hospital-tabs .tab-pane .my-timetable .heading img {
+    width: 83%;
+    margin-top: 10px;
+  }
+  .hospital-datawork .hospital-tabs .tab-pane .my-timetable .hospital-detection-date{
+    margin-top: 20px;
+    padding: 10px;
+  }
+  .hospital-datawork .hospital-tabs .tab-pane .my-timetable .hospital-detection-date .form-control{
+    width: fit-content;
+    border: none;
+    font-family: "regular";
+  }
+  .hospital-datawork .hospital-tabs .tab-pane .my-timetable .hospital-detection-date .form-control .option{
+    color: var(--color-secound);
+  }
+  .hospital-datawork .hospital-tabs .tab-pane .my-timetable .hospital-detection-date .radio-input {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  .hospital-datawork .hospital-tabs .tab-pane .my-timetable .hospital-detection-date .form-check {
+    margin-top: 15px;
+    border-radius: 10px;
+    font-family: "bold";
+    border: 1px solid var(--color-secound);
+    padding: 3px 2%;
+    margin-right: 10px;
+    width: 20%;
+  
+  }
+  .hospital-datawork .hospital-tabs .tab-pane .my-timetable .hospital-detection-date .disabled{
+    border: 1px solid #E3E3E3;
+  }
+  .hospital-datawork .hospital-tabs .tab-pane .my-timetable .hospital-detection-date .form-check-input {
+    opacity: 0;
+  }
+  .hospital-datawork .hospital-tabs .tab-pane .my-timetable .hospital-detection-date .form-check-label {
+    width: 100%;
+    font-size: 13px;
+    text-align: center;
+    
+  }
+  /* =========================finish my time table  */
+  /* =========================start feedback */
+  .hospital-datawork .hospital-tabs .tab-pane .feed-back .heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .hospital-datawork .hospital-tabs .tab-pane .feed-back .heading h4 {
+    font-family: "bold";
+    font-size: 42px;
+  }
+  .hospital-datawork .hospital-tabs .tab-pane .feed-back .heading img {
+    width: 92%;
+    margin-top: 10px;
+  }
+  .hospital-datawork .hospital-tabs .tab-pane .feed-back h6 {
+    font-family: "regular";
+    color: var(--color-primary);
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  .hospital-datawork .hospital-tabs .tab-pane .feed-back p {
+    font-family: "regular";
+    color: #626281;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  .hospital-datawork .hospital-tabs .tab-pane .feed-back .first,
+  .hospital-datawork .hospital-tabs .tab-pane .feed-back .second {
+    font-family: "regular";
+    color: var(--color-secound);
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  .hospital-datawork .hospital-tabs .tab-pane .feed-back .first span,
+  .hospital-datawork .hospital-tabs .tab-pane .feed-back .second span {
+    font-family: "bold";
+    color: var(--color-primary);
+  }
+  
+  /* =========================finish feedback */
+  
+  /* =========================start  workplace */
+  .hospital-datawork .hospital-tabs .tab-pane .workplace  .heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .hospital-datawork .hospital-tabs .tab-pane .workplace  .heading h4 {
+    font-family: "bold";
+    font-size: 30px;
+    color: var(--color-secound);
+  }
+  .hospital-datawork .hospital-tabs .tab-pane .workplace  h5{
+    font-family: "bold";
+    font-size: 15px;
+    color: var(--color-primary);
+  }
+  .hospital-datawork .hospital-tabs .tab-pane .workplace  .heading img {
+    width: 81%;
+    margin-top: 5px;
+  }
+  .hospital-datawork .hospital-tabs .workplace ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 40px 0;
+    font-family: "regular";
+    font-size: 15px;
+    width: 80%;
+    justify-content: space-between;
+    padding: 0;
+  }
+  .hospital-datawork .hospital-tabs .workplace ul li {
+    font-family: "regular";
+    width: 50%;
+  }
+  .hospital-datawork .hospital-tabs .workplace ul li h6{
+    font-family: "regular";
+  }
+  .hospital-datawork .hospital-tabs .workplace ul li p {
+    font-size: 10px;
+    color: var(--color-secound);
+  }
+  .hospital-datawork .hospital-tabs .workplace ul li .location {
+    display: flex;
+    flex-direction: row;
+  }
+  .hospital-datawork .hospital-tabs .workplace ul li .location p {
+    font-size: 10px;
+    color: var(--color-fourth);
+  }
+  .hospital-datawork .hospital-tabs .workplace ul li .location svg {
+    font-size: 13px;
+    color: transparent;
+    stroke: var(--color-fourth);
+    stroke-width: 32px;
+    margin-left: 5px;
+  }
+  /* =========================start  workplace */
+  /* =========================start detials */
+  .hospital-datawork .hospital-tabs .tab-pane .detials {
+    margin-top: 20px;
+  }
+  .hospital-datawork .hospital-tabs .tab-pane .detials h5 {
+    color: var(--color-primary);
+    font-family: "bold";
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .hospital-datawork .hospital-tabs .tab-pane .detials h6{
+    color: var(--color-secound);
+    font-family: "regular";
+  }
+  .hospital-datawork .hospital-tabs .tab-pane .detials .location {
+    display: flex;
+    justify-items: center;
+    
+  }
+  .hospital-datawork .hospital-tabs .tab-pane .detials .location svg {
+    margin-left: 9px;
+    margin-top: 7px;
+    color: transparent;
+    stroke: var(--color-six);
+    stroke-width: 50px;
+    font-size: 13px;
+  }
+  .hospital-datawork .hospital-tabs .tab-pane .detials .location p {
+    color: var(--color-six);
+    font-size: 16px;
+  }
+  .hospital-datawork .hospital-tabs .tab-pane .detials .location p span {
+    color: var(--color-secound);
+    font-family: "regular";
+  }
+  /* =========================finish detials */
+  /* =========================start service */
+  .hospital-datawork .hospital-tabs .service .main-heading h5 {
+    color: var(--color-primary);
+    font-family: "bold";
+    font-size: 24px;
+  }
+  
+  .hospital-datawork .hospital-tabs .service .coll {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 0;
+    font-family: "regular";
+    font-size: 15px;
+    padding: 0;
+  }
+  
+  .hospital-datawork .hospital-tabs .service .coll li {
+    margin-bottom: 34px;
+  }
+  
+  .hospital-datawork .hospital-tabs .service .coll a {
+    background-color: #f0f0f0;
+    text-decoration: 0;
+    border: 1px solid #f0f0f0;
+    margin-left: 15px;
+    padding: 7px 10px;
+    color: var(--color-secound);
+    transition: 0.3s;
+    font-size: 20px;
+  }
+  
+  .hospital-datawork .hospital-tabs .service ul a:hover {
+    font-family: "bold";
+  }
+  
+  /* =========================finish  service  */
+  /* =========================start instruction" */
+  
+  .hospital-datawork .hospital-tabs .tab-pane .instruction {
+    margin-top: 15px;
+  }
+  .hospital-datawork .hospital-tabs .tab-pane .instruction h5 {
+    font-family: "bold";
+    color: var(--color-primary);
+    margin-bottom: 16px;
+    font-size: 24px;
+  }
+  .hospital-datawork .hospital-tabs .tab-pane .instruction ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 0;
+    margin: 0;
+    color: var(--color-secound);
+    font-family: "regular";
+  }
+  
+  .hospital-datawork .hospital-tabs .tab-pane .instruction li {
+    width: 50%;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  
+  /* =========================finish instruction" */
+ /* =========================start hospital " */
+ .hospital-datawork .hospital-tabs .tab-pane .hospital-doctor .input-group {
+     width: 60%;
+     margin: 0 auto;
+ }
+ .hospital-datawork .hospital-tabs .tab-pane .hospital-doctor .input-group .form-control::placeholder{
+     font-family: 'regular';
+     padding-bottom: 5px;
+     padding-right: 11px;
+     font-size: 12px;
+     color: var(--color-fifth);
+ }
+ .hospital-datawork .hospital-tabs .tab-pane .hospital-doctor .input-group span{
+     position: relative;
+     left: 96%;
+     top: 9px;
+    }
+    .hospital-datawork .hospital-tabs .tab-pane .hospital-doctor .input-group span svg{
+        color: var(--color-fourth);
+    }
+    .hospital-datawork .hospital-tabs .tab-pane .hospital-doctor .header{
+      display: flex;
+      justify-content: space-between;
+      margin: 50px 0;
+    }
+    .hospital-datawork .hospital-tabs .tab-pane .hospital-doctor .header button{
+      background-color: var(--color-primary);
+      color: white;
+      width: 20%;
+      border-radius: 12px;
+      font-family: 'regular';
+    }
+    .hospital-datawork .hospital-tabs .tab-pane .hospital-doctor  .header .head{
+        display: flex;
+    }
+    .hospital-datawork .hospital-tabs .tab-pane .hospital-doctor .head .form-control{
+        width: fit-content;
+        border: none;
+        font-family: 'regular';
+        color: var(--color-secound);
+        margin-right: 3px;
+        background-image: none;
+    }
+    .hospital-datawork .hospital-tabs .tab-pane .hospital-doctor .head svg{
+        margin-top: 13px;
+        color: var(--color-secound);
+    }
+    .hospital-datawork .hospital-tabs .tab-pane .hospital-doctor .doctor-box{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .hospital-datawork .hospital-tabs .tab-pane .hospital-doctor .doctor-box .doctor-card{
+        width: 30%;
+       
+    }
+    .hospital-datawork .hospital-tabs .tab-pane .hospital-doctor .doctor-box .doctor-card img{
+        width: 100%;
+        border-radius: 5px;
+        object-fit: cover;
+        height: 230px;
+
+    }
+    .hospital-datawork .hospital-tabs .tab-pane .hospital-doctor .doctor-box .doctor-card  h6{
+        border: 1px solid #9F9F9F;
+        font-family: 'bold';
+        color: var(--color-secound);
+        text-align: center;  
+        padding: 10px 0;
+        border-radius: 5px;
+        font-size: 20px;
+  }
+ /* =========================finish doctor " */
+
+  /* =========================start hospital-rate " */
+  .hospital-datawork .hospital-tabs .tab-pane .hospital-rate {
+    border: 1px solid #f8f8f8;
+  }
+  .hospital-datawork .hospital-tabs .tab-pane .hospital-rate .heading {
+    display: flex;
+    margin: 40px 20px 20px 0;
+  }
+  .hospital-datawork .hospital-tabs .tab-pane .hospital-rate .heading svg {
+    margin-left: 12px;
+    font-size: 29px;
+    color: var(--color-primary);
+  }
+  .hospital-datawork .hospital-tabs .tab-pane .hospital-rate h4 {
+    font-family: "bold";
+    color: var(--color-secound);
+    margin: auto 0;
+    font-size: 30px;
+  }
+  .hospital-datawork .hospital-tabs .tab-pane .main-rate {
+    text-align: center;
+    margin-top: 70px;
+  }
+  .hospital-datawork .hospital-tabs .tab-pane .main-rate svg {
+    font-size: 26px;
+    color: #cacaca;
+    margin-bottom: 30px;
+  }
+  .hospital-datawork .hospital-tabs .tab-pane .main-rate .active {
+    color: #ffc107;
+  }
+  .hospital-datawork .hospital-tabs .tab-pane .main-rate p {
+    font-family: "bold";
+    color: var(--color-secound);
+  }
+  .hospital-datawork .hospital-tabs .tab-pane .main-rate span {
+    font-family: "regular";
+    color: var(--color-fourth);
+  }
+  .hospital-datawork .hospital-tabs .tab-pane .hospital-cards {
+    width: 70%;
+    margin: 50px auto 20px;
+    border: 1px solid #B2B2B2;
+    border-radius: 10px;
+    padding: 3%;
+  }
+  .hospital-datawork .hospital-tabs .tab-pane .hospital-cards svg {
+    font-size: 21px;
+    color: #cacaca;
+    margin-bottom: 10px;
+  }
+  .hospital-datawork .hospital-tabs .tab-pane .hospital-cards .active {
+    color: #ffc107;
+  }
+  .hospital-datawork .hospital-tabs .tab-pane .hospital-cards p {
+    font-family: "regular";
+    color: var(--color-secound);
+    width: 50%;
+  }
+  .hospital-datawork .hospital-tabs .tab-pane .hospital-cards h6 {
+    font-size: 10px;
+    font-family: "regular";
+    color: var(--color-fourth);
+  }
+  .hospital-datawork .hospital-tabs .tab-pane .hospital-cards h5 {
+    color: var(--color-secound);
+    font-family: "bold";
+  }
+  
+  /* =========================finish hospital-rate" */
+
+/* --------------------------finish Al Safwa Specialized Hospital------------------------- */
+/* --------------------------start Hospital Personal Data------------------------- */
+.hospital-personal-data {
+    background-color: var(--back-ground);
+    text-align: start;
+  }
+  .hospital-personal-data .hospital-personal{
+    padding-top: 0;
+  }
+  .hospital-personal-data .hospital-personal a:hover,
+  .hospital-personal-data .hospital-personal a:focus {
+    text-decoration: none;
+    outline: none;
+  }
+  
+  .hospital-personal-data .nav-pills {
+ 
+    padding-top: 40px;
+    font-family: "regular";
+    color: var(--color-primary);
+    border-left: 1px solid var(--color-fifth);
+    height: 100%;
+  }
+  .hospital-personal-data .nav-pills .nav-link {
+    color: var(--color-six);
+    font-family: "regular";
+    margin-bottom: 30px;
+    height: 80px;
+    text-align: center;
+    font-size: 24px;
+  }
+  .hospital-personal-data .nav-pills .nav-link.active,
+  .nav-pills .show > .nav-link {
+    background-color: transparent;
+    color: var(--color-primary);
+    font-family: "bold";
+    border-left: 4px solid var(--color-primary);
+    margin-bottom: 30px;
+    height: 80px;
+  }
+  .hospital-personal-data .hospital-personal .personal-data {
+    padding-top: 40px;
+  }
+  .hospital-personal-data .hospital-personal .tab-content form label {
+    color: var(--color-primary);
+    font-family: "bold";
+    margin-top: 40px;
+    font-size: 24px;
+  }
+  .hospital-personal-data .hospital-personal .tab-content form .form-control ,
+  .hospital-personal-data .hospital-personal .tab-content form .append-day .form-group .field{
+    width: 60%;
+    padding: 1%;
+    border-radius: 12px;
+    border-color: var(--color-fourth);
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: var(--color-secound);
+  }
+  .hospital-personal-data .hospital-personal .tab-content form .form-control::placeholder {
+    color: var(--color-secound) !important;
+    font-family: "regular";
+    font-size: 18px !important;
+    padding-bottom: 2px;
+  }
+  .hospital-personal-data .hospital-personal .tab-content form .form-control option{
+    font-size: 18px !important;
+    color: var(--color-secound) !important;
+    font-family: "regular";
+  }
+  .hospital-personal-data .hospital-personal .tab-content  .btn-light,
+  .hospital-personal-data .hospital-personal .tab-content .anther {
+    width: 50%;
+    background-color: var(--color-primary);
+    font-family: "regular";
+    margin-bottom: 20px;
+    margin-top: 50px;
+    padding: 1% 0;
+    border-radius: 10px;
+    color: white;
+  }
+  /* strat upload image */
+  .hospital-personal-data .hospital-personal .avatar-upload {
+    position: relative;
+    max-width: 205px;
+    margin: 50px 0;
+  }
+  .hospital-personal-data .hospital-personal .avatar-edit {
+    position: absolute;
+    right: 12px;
+    z-index: 1;
+    top: 10px;
+  }
+  .hospital-personal-data .hospital-personal .personal .avatar-edit input {
+    display: none;
+  }
+  .hospital-personal-data .hospital-personal input + label {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin-bottom: 0;
+    border-radius: 100%;
+    background: #ffffff;
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+    z-index: 3;
+  }
+  .hospital-personal-data .hospital-personal input + label:hover {
+    background: #f1f1f1;
+    border-color: #d6d6d6;
+  }
+  
+  .hospital-personal-data .hospital-personal input + label:after {
+    content: url(../media/image-hospital/camira.svg);
+    position: absolute;
+    top: 6px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+  }
+  
+  .hospital-personal-data .hospital-personal .avatar-preview {
+    width: 192px;
+    height: 192px;
+    position: relative;
+    border-radius: 100%;
+    border: 6px solid #f8f8f8;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  }
+  .hospital-personal-data .hospital-personal .avatar-preview > div {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .hospital-personal-data .hospital-personal .data-work {
+    padding-top: 22px;
+  }
+  .hospital-personal-data .hospital-personal .data-work {
+    margin-top: 30px;
+  }
+  .append .hospital-personal-data .hospital-personal .data-work .form-group {
+    width: 80%;
+    margin-bottom: 30px;
+  }
+  .hospital-personal-data .hospital-personal .available-time .form-group .hasDatepicker{
+    border-radius: 10px;
+    border: 1px solid var(--color-fourth);
+    height: 38px !important;
+    width: 60%;
+  }
+  .hospital-personal-data .hospital-personal .data-work .form-control,
+  .hospital-personal-data .hospital-personal .data-work .form-control option {
+    color: var(--color-fourth);
+    font-family: "regular";
+    font-size: 13px;
+  }
+  .hospital-personal-data .hospital-personal .data-work label {
+    color: var(--color-primary);
+    font-family: "bold";
+    margin-bottom: 20px;
+  }
+  .hospital-personal-data .hospital-personal .data-work .form-group .form-control::placeholder {
+    color: var(--color-fourth);
+    font-family: "regular";
+    font-size: 13px;
+  }
+  .hospital-personal-data .hospital-personal .data-work .append
+  {
+    margin: 30px 0;
+  }
+  .hospital-personal-data .hospital-personal .data-work .add
+   {
+    background-color: transparent;
+    color: var(--color-primary);
+    border: none;
+    width: 50%;
+    text-align: end;
+    font-family: 'regular';
+    transition: .3s;
+    text-decoration: none;
+    
+  }
+  .hospital-personal-data .hospital-personal .data-work .add:hover 
+  {
+    font-family: 'bold';
+  }
+  .hospital-personal-data .hospital-personal .available-time {
+    padding-top: 50px;
+  }
+  .hospital-personal-data .hospital-personal .available-time h5 {
+    color: var(--color-primary);
+    font-family: "bold";
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .hospital-personal-data .hospital-personal .available-time p {
+    color: var(--color-six);
+    font-family: "bold";
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+.hospital-personal-data .hospital-personal .available-time form p{
+  color: var(--color-primary);
+    font-family: "bold";
+    margin-top: 40px;
+    font-size: 24px;
+}
+  .hospital-personal-data .hospital-personal .available-time .day {
+    display: flex;
+    color: var(--color-fourth);
+    justify-items: center;
+    margin-top: 50px;
+  }
+  .hospital-personal-data .hospital-personal .available-time .day h5 {
+    font-family: "regular";
+    color: var(--color-secound);
+    font-size: 24px;
+  }
+  .hospital-personal-data .hospital-personal .available-time .day svg {
+    font-size: 21px;
+    margin-left: 7px;
+    color: var(--color-secound);
+  }
+  
+  .hospital-personal-data .hospital-personal .available-time .append-day .form-group label {
+    color: var(--color-secound);
+    font-family: "regular";
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .hospital-personal-data .hospital-personal .available-time .append-day .append-btn-day {
+    background-color: transparent;
+    color: var(--color-primary);
+    border: none;
+    width: 80%;
+   margin: 0;
+    text-align: end;
+    font-size: 18px;
+    font-family: 'regular';transition: .3s;
+    text-decoration: none;
+  }
+  .hospital-personal-data .hospital-personal .available-time .append-day .append-btn-day:hover {
+    font-family: 'bold'
+  }
+  .hospital-personal-data .hospital-personal .available-time .append-day .form-group label svg {
+    margin-left: 10px;
+    color: var(--color-primary);
+  }
+  .hospital-personal-data .hospital-personal .available-time .ava {
+    margin-top: 50px;
+  }
+  .hospital-personal-data .hospital-personal .location {
+    padding-top: 17px;
+    width: 100%;
+  }
+  
+  /* .embed-responsive-item {
+    width:800px;
+    margin: 0 auto ;
+  } */
+  
+  .hospital-personal-data .hospital-personal .location .manual-search {
+    width: 46%;
+    background-color: white;
+    border-radius: 15px;
+    position: relative;
+    top: -818px;
+    left: -39px;
+    padding: 2% 3%;
+  }
+  
+  .hospital-personal-data .hospital-personal .location .manual-search h4 {
+    color: var(--color-primary);
+    font-family: "bold";
+    margin-bottom: 20px;
+  }
+  
+  .hospital-personal-data .hospital-personal .location .manual-search p {
+    color: var(--color-fourth);
+    font-family: "regular";
+    margin-bottom: 20px;
+  }
+  
+  .hospital-personal-data .hospital-personal .location .manual-search form .form-control, 
+  .hospital-personal-data .hospital-personal .location .manual-search form .form-control::placeholder {
+    width: 100%;
+    font-family: "regular";
+    color: var(--color-fourth);
+    font-size: 10px;
+  }
+  .hospital-personal-data .hospital-personal .location .manual-search form .form-group-area{
+    margin-top: -53px;
+    color: var(--color-fifth);
+  }
+  .hospital-personal-data .hospital-personal .location .manual-search form button {
+    width: 100%;
+    padding: 5% 0;
+    margin-top: 7px;
+  }
+  .hospital-personal-data .hospital-personal .location {
+    width: 100%;
+  }
+ 
+  /* .hospital-personal-data .hospital-personal .embed-responsive-item {
+    width: 100%;
+  } */
+  .vertical {
+    height: 100%;
+    position: absolute;
+    display: inline-block;
+    left: 148%;
+    border-left: 1px solid var(--color-fourth);
+  }
+
+/* --------------------------finish Hospital Personal Data------------------------- */
+/* --------------------------start Hospital Add Doctor------------------------- */
+
+/*=========== start heading */
+.add-doc-hospital{
+    text-align: start;
+    background-color: var(--back-ground) ;
+}
+
+  .add-doc-hospital .heading img{
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    object-fit: cover;
+  }
+  .add-doc-hospital .heading h4 {
+    color: var(--color-secound);
+    font-family: "bold";
+    font-size: 56px;
+    bottom: 176px;
+    position: relative;
+    text-align: end;
+    z-index: 3;
+    margin-left: 20px;
+  }
+  /*=========== finish heading */
+  .add-doc-hospital p{
+    font-family: "regular";
+    margin: 20px 0 80px 0;
+    font-size: 32px;
+    color: var(--color-secound);
+  }
+  /* ---------- start add doctor data ---------------- */
+  /*---- start upload ----------*/
+  
+  .add-doc-hospital .add-doc-hospital-data .avatar-upload {
+    position: relative;
+    max-width: 205px;
+    margin: 10px 20px 0 0;
+  }
+  
+  .add-doc-hospital .add-doc-hospital-data .avatar-edit {
+    position: absolute;
+    right: 12px;
+    z-index: 1;
+    top: 10px;
+    opacity: 0;
+  }
+  
+  .add-doc-hospital .add-doc-hospital-data .avatar-edit input {
+    opacity: 0;
+    width: 70%;
+    height: 113px;
+  }
+  
+  .add-doc-hospital .add-doc-hospital-data input + label {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin-bottom: 0;
+    border-radius: 100%;
+    background: #ffffff;
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+    z-index: 3;
+  }
+  .add-doc-hospital .add-doc-hospital-data input + label:hover {
+    background: #f1f1f1;
+    border-color: #d6d6d6;
+  }
+  
+  .add-doc-hospital .add-doc-hospital-data input + label:after {
+    content: "\f040";
+    font-family: "FontAwesome";
+    color: #757575;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+  }
+  
+  .add-doc-hospital .add-doc-hospital-data .avatar-preview {
+    width:125px;
+    height: 125px;
+    position: relative;
+    border-radius: 100%;
+    border: 1px solid var(--color-primary);
+    
+  }
+  .add-doc-hospital .add-doc-hospital-data .avatar-preview > div {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+    /*---- finish upload ----------*/
+
+  .add-doc-hospital .add-doc-hospital-data form{
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+  }
+  .add-doc-hospital .add-doc-hospital-data form .form-group{
+      display: flex; 
+  }
+  .add-doc-hospital .add-doc-hospital-data form .form-group label{
+      width: 25%;
+      color: var(--color-secound);
+      font-family: 'regular';
+      font-size: 20px;
+  }
+  .add-doc-hospital .add-doc-hospital-data form .form-group .form-control{
+      border-color: var(--color-fourth);
+      border-radius: 10px;
+        color: var(--color-fourth);
+        font-family: 'regular';
+        font-size: 16px;
+        background-image: none;
+  }
+  .add-doc-hospital .add-doc-hospital-data form .form-group .form-control::placeholder{
+    padding-bottom: 3px;
+  }
+  .add-doc-hospital .add-doc-hospital-data form button{
+      width: 30%;
+      background-color: var(--color-primary);
+      color: white;
+      border-radius: 12px;
+      font-family: 'regular';
+      margin-right: 162px;
+    }
+    /* start sweet alert */
+   .swal2-icon{
+        content: url(../media/image-hospital/success.svg) !important;
+        width: 205px !important;
+        height: 143px !important;
+        border: none !important;
+    }
+     .swal2-popup .swal2-title{
+        display: none !important;
+    }
+    .swal2-popup .swal2-styled{
+      
+        width: 50%;
+        background-color: var(--color-primary) !important;
+        border-radius: 10px !important;
+        font-family: 'regular' !important;
+    }
+    .swal2-popup .swal2-content{
+        font-family: 'bold' !important;
+        color: var(--color-secound) !important;
+    }
+        /* start sweet alert */
+
+    /* --------------------- finish add doctor data ---------------------- */
+
+  /* --------------------------finish Hospital Add Doctor------------------------- */
+  /* --------------------------start Hospital Profile------------------------- */
+  .hospital-doctor-datawork {
+    text-align: start;
+  }
+  /* start upload */
+  .hospital-doctor-datawork .hospital-doctor-upload h1 {
+    font-family: "bold";
+    text-align: start;
+    margin: 30px 30px 0 0;
+    position: relative;
+    top: 115px;
+    z-index: 3;
+    font-size: 44px;
+  }
+  
+  .hospital-doctor-datawork .hospital-doctor-upload .avatar-upload {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .hospital-doctor-datawork .hospital-doctor-upload .avatar-edit {
+    position: absolute;
+    left: 45px;
+    z-index: 5;
+    top: 24px;
+  }
+  
+  .hospital-doctor-datawork .hospital-doctor-upload input {
+    display: none;
+  }
+  
+  .hospital-doctor-datawork .hospital-doctor-upload + label {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin-bottom: 0;
+    border-radius: 100%;
+    background: #ffffff;
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+  }
+  .hospital-doctor-datawork .hospital-doctor-upload input:hover {
+    background: #f1f1f1;
+    border-color: #d6d6d6;
+  }
+  .hospital-doctor-datawork .hospital-doctor-upload input:after {
+    content: "\f040";
+    font-family: "FontAwesome";
+    color: #757575;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin: auto;
+  }
+  .hospital-doctor-datawork .hospital-doctor-upload .avatar-edit label {
+    background-color: white;
+    border-radius: 50%;
+  }
+  .hospital-doctor-datawork .hospital-doctor-upload .avatar-edit svg {
+    margin: 0 auto;
+    position: relative;
+    left: 1px;
+    top: 2px;
+    font-size: 25px;
+    color: transparent;
+    stroke: var(--color-primary);
+    stroke-width: 30px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    padding: 2%;
+  }
+  
+  .hospital-doctor-datawork .hospital-doctor-upload .avatar-preview {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background-color: var(--back-ground);
+    object-fit: cover;
+  }
+  .hospital-doctor-datawork .hospital-doctor-upload .avatar-preview .preview {
+    display: flex !important;
+  }
+  .hospital-doctor-datawork .hospital-doctor-upload .avatar-preview > div {
+    width: 100%;
+    height: 100%;
+    margin:  auto ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+  }
+  /* finish upload */
+/* start hospital-doctor-tabs */
+.hospital-doctor-datawork .hospital-doctor-tabs {
+    margin-top: 40px;
+  }
+  .hospital-doctor-datawork .hospital-doctor-tabs .nav-tabs {
+    font-size: 24px;
+    border: none;
+    font-family: "bold";
+    margin-bottom: 76px;
+  }
+  .hospital-doctor-datawork .hospital-doctor-tabs .nav-tabs .nav-link {
+    color: var(--color-fourth);
+    box-shadow: 0px 3px 6px rgb(123 123 123 / .16);
+  }
+  .hospital-doctor-datawork .hospital-doctor-tabs .nav-tabs .nav-link.active {
+    color: var(--color-secound);
+    border: 1px solid #F4F4F4;
+  }
+  .hospital-doctor-datawork .hospital-doctor-tabs .nav-tabs .nav-link,
+  .hospital-doctor-datawork .hospital-doctor-tabs .nav-tabs .nav-link.active {
+    margin:auto;
+    text-align: center;
+    height: fit-content;
+    padding: 25px;
+  }
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .img {
+    border: 1px solid #F4F4F4;
+  }
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .img img {
+    width: auto;
+    height: fit-content;
+  }
+  /* =========================start my time table */
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .my-timetable {
+    border: 1px solid #F4F4F4;
+    margin:30px 0;
+    width: 100%;
+    height: auto;
+  }
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .my-timetable .heading {
+    display: flex;
+    justify-content: space-between;
+    padding:  10px;
+    background-color:#f8f8f8 ;
+  }
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .my-timetable .heading h4 {
+    font-family: "bold";
+    font-size: 24px;
+    color: var(--color-primary);
+    margin-top: 10px;
+  }
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .my-timetable .heading img {
+    width: 77%;
+    margin-top: 10px;
+  }
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .my-timetable  p{
+    font-family: "regular";
+    margin-top: 15px;
+    color: var(--color-six);
+    padding: 0 2%;
+    font-size: 20px;
+  }
+  /* =========================finish my time table  */
+  /* =========================start feedback */
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .feed-back .heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .feed-back .heading h4 {
+    font-family: "bold";
+    font-size: 40px;
+  }
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .feed-back .heading img {
+    width: 77%;
+  }
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .feed-back h6 {
+    font-family: "regular";
+    color: var(--color-primary);
+    margin-bottom: 20px;
+    font-size: 24px;
+
+  }
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .feed-back .spec{
+    color: var(--color-third);
+    font-family: "regular";
+    font-size: 16px;
+  }
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .feed-back p {
+    font-family: "regular";
+    color: var(--color-six);
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-size: 20px;
+  }
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .feed-back .first,
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .feed-back .second {
+    font-family: "regular";
+    color: var(--color-secound);
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .feed-back .first span,
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .feed-back .second span {
+    font-family: "bold";
+    color: var(--color-primary);
+    font-size: 24px;
+  }
+  /* =========================finish feedback */
+  /* =========================start  workplace */
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .workplace  .heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .workplace  .heading h4 {
+    font-family: "bold";
+    font-size: 32px;
+    color: var(--color-secound);
+  }
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .workplace  .heading img{
+    width: 77%;
+  }
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .workplace  h5{
+    font-family: "bold";
+    font-size: 24px;
+    color: var(--color-primary);
+  }
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .workplace p{
+    font-family: "regular";
+    background-color: #f0f0f0;
+    color: var(--color-secound);
+    width: 60%;
+    padding: 1% 2%;
+  }
+  /* =========================start  workplace */
+  /* =========================start detials */
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .detials {
+    margin-top: 20px;
+  }
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .detials h5 {
+    color: var(--color-primary);
+    font-family: "bold";
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .detials .location {
+    display: flex;
+    justify-items: center;
+  }
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .detials .location svg {
+    margin-left: 8px;
+    color: transparent;
+    stroke: var(--color-six);
+    stroke-width: 50px;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .detials .location p {
+    color: var(--color-six);
+    font-size: 16px;
+  }
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .detials .location p span {
+    color: var(--color-secound);
+    font-family: "regular";
+  }
+  /* =========================finish detials */
+  /* =========================start instruction" */
+  
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .instruction {
+    margin-top: 15px;
+  }
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .instruction h5 {
+    font-family: "bold";
+    color: var(--color-primary);
+    margin-bottom: 16px;
+    font-size: 24px;
+  }
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .instruction ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 0;
+    margin: 0;
+    color: var(--color-secound);
+    font-family: "regular";
+    font-size: 15px;
+  }
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .instruction li {
+    width: 50%;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  /* =========================finish instruction" */
+ 
+  /* =========================start hospital-doctor-rate " */
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .hospital-doctor-rate {
+    border: 1px solid #f8f8f8;
+  }
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .hospital-doctor-rate .heading {
+    display: flex;
+    margin: 40px 20px 20px 0;
+  }
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .hospital-doctor-rate .heading svg {
+    margin-left: 12px;
+    font-size: 28px;
+    color: var(--color-primary);
+  }
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .hospital-doctor-rate h4 {
+    font-family: "bold";
+    color: var(--color-secound);
+    margin: auto 0;
+    font-size: 27px;
+  }
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .main-rate {
+    text-align: center;
+    margin-top: 70px;
+  }
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .main-rate svg {
+    font-size: px;
+    color: #cacaca;
+    margin-bottom: 30px;
+  }
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .main-rate .active {
+    color: #ffc107;
+  }
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .main-rate p {
+    font-family: "bold";
+    color: var(--color-secound);
+  }
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .main-rate span {
+    font-family: "regular";
+    color: var(--color-fourth);
+  }
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .hospital-doctor-cards {
+    width: 70%;
+    margin: 50px auto 20px;
+    border: 1px solid var(--color-fifth);
+    border-radius: 10px;
+    padding: 3%;
+  }
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .hospital-doctor-cards svg {
+    font-size: 21px;
+    color: var(--color-fourth);
+    margin-bottom: 10px;
+  }
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .hospital-doctor-cards .active {
+    color: goldenrod;
+  }
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .hospital-doctor-cards p {
+    font-family  : "regular";
+    color: var(--color-secound);
+    width: 50%;
+  }
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .hospital-doctor-cards h6 {
+    font-size: 10px;
+    font-family: "regular";
+    color: var(--color-fourth);
+  }
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .hospital-doctor-cards h5 {
+    color: var(--color-secound);
+    font-family: "bold";
+  }
+
+  /* =========================finish hospital-doctor-rate" */
+
+ /* --------------------------finish hospital profile------------------------- */
+ /* --------------------------start hospital date------------------------- */
+ .hospital-all-data {
+  text-align: start;
+}
+/* start tab */
+.hospital-all-data .nav-pills {
+ 
+  padding-top: 40px;
+  font-family: "regular";
+  color: var(--color-primary);
+  border-left: 1px solid var(--color-fifth);
+  height: 100%;
+}
+.hospital-all-data .nav-pills .nav-link {
+  color: var(--color-six);
+  font-family: "regular";
+  margin-bottom: 30px;
+  height: 65px;
+  text-align: center;
+  font-size: 24px;
+}
+.hospital-all-data .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: transparent;
+  color: var(--color-primary);
+  font-family: "bold";
+  border-left: 4px solid var(--color-primary);
+  margin-bottom: 30px;
+  height: 65px;
+}
+.hospital-all-data .tab-content {
+  padding-top: 40px;
+}
+.hospital-all-data .table-bordered thead td,
+.table-bordered thead {
+  background-color: #F4F4F4;
+  border: none;
+}
+.hospital-all-data .table-bordered thead td,
+.table-bordered thead th {
+  font-family: "regular";
+  width: 20%;
+  text-align: center;
+}
+.hospital-all-data .table-bordered thead td,
+.table-bordered thead .details {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 5px auto;
+}
+.hospital-all-data .table-bordered thead td,
+.table-bordered thead .details h5 {
+  color: var(--color-secound);
+  font-size: 20px;
+  font-family: "bold";
+}
+.hospital-all-data .table-bordered thead td,
+.table-bordered thead .details svg {
+  margin-left: 7px;
+  margin-top: 3px;
+  color: transparent;
+  font-size: 20px;
+  stroke: var(--color-secound);
+  stroke-width: 30px;
+}
+.hospital-all-data .table-bordered thead td,
+.table-bordered thead th {
+  color: var(--color-secound);
+  font-size: 12px;
+  font-family: "bold";
+}
+.hospital-all-data table.table-bordered tbody td {
+  background-color: white;
+  font-family: "regular";
+  font-size: 18px;
+  color: var(--color-six);
+  padding: 5px;
+  text-align: center;
+  margin: auto;
+}
+
+.hospital-all-data table.table-bordered tbody td button {
+  background-color: var(--color-primary);
+  padding: 3% 0%;
+  margin: 5% auto;
+  font-size: 18px;
+  width: 80%;
+  color: white;
+}
+
+
+/* start modal */
+.hospital-all-data .modal-content {
+  width: 120%;
+}
+.hospital-all-data .modal-header {
+  padding: 0;
+  margin: 15px 10px;
+  border-bottom: none;
+}
+/* .hospital-all-data .modal-header,
+.hospital-all-data .modal-body,
+.hospital-all-data .modal-footer{
+  width: fit-content;
+} */
+.hospital-all-data .modal-header .modal-title {
+  color: var(--color-primary);
+  font-size: 20px;
+  font-family: "bold";
+}
+.hospital-all-data .modal-header .close {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  width: 10%;
+  color: var(--color-primary);
+}
+.hospital-all-data .modal-header .close span {
+  font-size: 20px;
+}
+.hospital-all-data .modal-body h5 {
+  text-align: start;
+  color: var(--color-primary);
+  font-family: "bold";
+  font-size: 12px;
+}
+.hospital-all-data .modal-body h6 {
+  color: var(--color-secound);
+  text-align: start;
+  font-size: 10px;
+  font-family: "bold";
+  margin-bottom: 20px;
+}
+.hospital-all-data .modal-body .details {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: var(--back-ground);
+  padding: 2%;
+}
+.hospital-all-data .modal-body .details .detail {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  justify-self: start;
+}
+.hospital-all-data .modal-body .details .detail img {
+  width: 12%;
+  height: 24px;
+  padding: 1%;
+  margin-left: 10px;
+  background-color: var(--color-fifth);
+}
+.hospital-all-data .modal-body .details .detail p {
+  margin-bottom: 0;
+  color: var(--color-secound);
+}
+.hospital-all-data .modal-body .location {
+  display: flex;
+}
+.hospital-all-data .modal-body .location svg {
+  color: transparent;
+  stroke: var(--color-secound);
+  stroke-width: 30px;
+  margin-left: 10px;
+}
+.hospital-all-data .modal-body .location p {
+  color: var(--color-secound);
+  font-size: 10px;
+}
+.hospital-all-data .modal-body .text {
+  margin-top: 20px;
+}
+.hospital-all-data .modal-body .text h6 {
+  color: var(--color-fifth);
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+.hospital-all-data .modal-body .text p {
+  text-align: start;
+  color: var(--color-secound);
+  font-family: 'bold';
+}
+.hospital-all-data .modal-footer {
+  border-top: none;
+  display: flex;
+  width: 100%;
+  justify-content: start;
+}
+.hospital-all-data .modal-footer .btn-success {
+  font-size: 15px;
+  padding: 1% 10%;
+  margin: 0;
+  width: 60%;
+  transition: .3s;
+}
+.hospital-all-data .modal-footer .btn-success:hover{
+  background-color: white;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+.hospital-all-data .modal-footer .btn-danger {
+  color: #BC4242;
+  background-color: #F4F4F4;
+  border-color:#F4F4F4 ;
+  padding: 1% 3%;
+  margin-right: 24px;
+  width: 30%;
+    transition: .3s;
+}
+.hospital-all-data .modal-footer .btn-danger:hover{
+  background-color: #BC4242;
+  color: #F4F4F4;
+}
+.hospital-all-data .tab-content table.table-bordered .btn-warning {
+  width: 80%;
+  margin: 10px auto;
+  padding: 4% 0;
+  color: white;
+  background-color:var(--color-primary);
+  font-size: 18px;
+}
+.hospital-all-data .tab-content table.table-bordered .delay-time p{
+  color: var(--color-secound);
+  font-family: 'bold';
+  margin: 30px 0;
+}
+.hospital-all-data .tab-content table.table-bordered .delay-time .radio-input {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.hospital-all-data .tab-content table.table-bordered .delay-time .form-check {
+  margin-top: 15px;
+  border-radius: 10px;
+  font-family: "bold";
+  border: 1px solid var(--color-fifth);
+  padding: 1% 3%;
+  margin-right: 10px;
+  color: var(--color-secound);
+}
+.hospital-all-data .tab-content table.table-bordered .delay-time .active{
+  border: 1px solid var(--color-secound);
+}
+.hospital-all-data .tab-content table.table-bordered .delay-time .disabled{
+  border: 1px solid var(--color-fifth);
+
+}
+.hospital-all-data .tab-content table.table-bordered .delay-time .form-check-input {
+  opacity: 0;
+}
+.hospital-all-data .tab-content table.table-bordered .delay-time .form-check-label {
+  width: 100%;
+  font-size: 12px;
+}
+.hospital-all-data .tab-content table.table-bordered .delay-time .acc {
+  width: 60%;
+  margin: 0 auto;
+}
+.hospital-all-data .tab-content table.table-bordered .accepted {
+  color: var(--color-third);
+}
+.hospital-all-data .tab-content table.table-bordered .refused {
+  color: #BC4242;
+}
+.hospital-all-data .tab-content table.table-bordered .accepted h6,
+.hospital-all-data .tab-content table.table-bordered .refused h6 {
+  font-size: 18px;
+  margin: 10px auto;
+  width: 67%;
+  padding: 8% 5%;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-family: "bold";
+}
+.hospital-all-data .tab-content table.table-bordered .accepted h6 {
+  background-color: rgba(74, 185, 177, 0.16) ;
+
+}
+.hospital-all-data .tab-content table.table-bordered .refused h6 {
+  background-color: rgba(188, 66, 66, 0.14) ;
+}
+/* --------------------------finish hospital date------------------------- */
+/* --------------------------start hospital Doctor Personal------------------------- */
+.hospital-doctor-data-personal{
+  text-align: start;
+  background-color: var(--back-ground);
+}
+/* start tab */
+.hospital-doctor-data-personal .nav-pills {
+  padding-top: 104px;
+  font-family: "regular";
+  color: var(--color-primary);
+  border-left: 1px solid var(--color-fifth);
+  height: 100%;
+}
+.hospital-doctor-data-personal .nav-pills .nav-link {
+  color: var(--color-six);
+  font-family: "regular";
+  margin-bottom: 30px;
+  height: 80px;
+  text-align: center;
+  font-size: 24px;
+}
+.hospital-doctor-data-personal .nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: transparent;
+  color: var(--color-primary);
+  font-family: "bold";
+  border-left: 4px solid var(--color-six);
+  margin-bottom: 30px;
+  height: 80px;
+}
+.hospital-doctor-data-personal .hospital-personal input + label:after{
+
+}
+.hospital-doctor-data-personal .tab-content {
+  padding-top: 40px;
+}
+.hospital-doctor-data-personal .hospital-personal .personal-data {
+  padding-top: 40px;
+}
+.hospital-doctor-data-personal .hospital-personal  form label {
+  color: var(--color-primary);
+  font-family: "bold";
+  margin-bottom: 10px;
+  width: 50%;
+  font-size: 20px;
+}
+
+.hospital-doctor-data-personal .hospital-personal form .form-control {
+  width: 90%;
+  padding: 0 2%;
+  border-radius: 10px;
+  border-color: #F4F4F4;
+  margin-bottom: 40px;
+}
+
+.hospital-doctor-data-personal .hospital-personal  form .form-control::placeholder {
+  color: var(--color-secound);
+  font-family: "regular";
+  font-size: 10px;
+  padding-bottom: 2px;
+  font-size: 18px;
+}
+
+.hospital-doctor-data-personal .hospital-personal  .btn-block,
+.hospital-doctor-data-personal .hospital-personal  .anther {
+  width: 50%;
+  background-color: var(--color-primary);
+  font-family: "regular";
+  margin-bottom: 20px;
+  margin-top: 50px;
+  padding: 1% 0;
+  border-radius: 10px;
+  color: white;
+}
+
+/* strat upload image */
+
+.hospital-doctor-data-personal .hospital-personal .avatar-upload {
+  position: relative;
+  max-width: 205px;
+  margin: 50px 0;
+}
+
+.hospital-doctor-data-personal .hospital-personal .avatar-edit {
+  position: absolute;
+  right: 12px;
+  z-index: 1;
+  top: 10px;
+}
+
+.hospital-doctor-data-personal .hospital-personal  .avatar-edit input {
+  display: none;
+}
+
+.hospital-doctor-data-personal .hospital-personal input + label {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  margin-bottom: 0;
+  border-radius: 100%;
+  background: #ffffff;
+  border: 1px solid transparent;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  font-weight: normal;
+  transition: all 0.2s ease-in-out;
+  z-index: 3;
+}
+.hospital-doctor-data-personal .hospital-personal input + label:hover {
+  background: #f1f1f1;
+  border-color: #d6d6d6;
+}
+
+.hospital-doctor-data-personal .hospital-personal input + label:after {
+  content: url(../media/image-hospital/camira.svg);
+
+  position: absolute;
+  top: 6px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: auto;
+}
+.hospital-doctor-data-personal .hospital-personal .avatar-preview {
+  width: 192px;
+  height: 192px;
+  position: relative;
+  border-radius: 100%;
+  border: 6px solid #f8f8f8;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.hospital-doctor-data-personal .hospital-personal .avatar-preview > div {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hospital-doctor-data-personal .hospital-personal .personal {
+  padding-top: 30px;
+}
+
+.hospital-doctor-data-personal .hospital-data .data-work {
+  padding-top: 39px;
+}
+.hospital-doctor-data-personal .hospital-data  form .form-control {
+  width: 90%;
+  padding: 0 2%;
+  border-radius: 10px;
+  border-color: var(--color-fourth);
+  margin-bottom: 30px;
+}
+
+.hospital-doctor-data-personal .hospital-data   form .form-control::placeholder {
+  color: var(--color-secound) !important;
+  font-family: "regular";
+  font-size: 18px !important;
+  padding-bottom: 2px;
+}
+.hospital-doctor-data-personal .hospital-data .data-work .append .form-control ,
+.hospital-doctor-data-personal .hospital-data .data-work  .form-control {
+  color: var(--color-secound);
+  border-color: var(--color-fourth);
+  font-family: "regular";
+  font-size: 18px;
+  width: 90%;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+.hospital-doctor-data-personal .hospital-data .data-work  .anther,
+.hospital-doctor-data-personal .hospital-time .available-time .ava  {
+  width: 50%;
+  background-color: var(--color-primary);
+  font-family: "regular";
+  margin-bottom: 20px;
+  margin-top: 50px;
+  padding: 1% 0;
+  border-radius: 10px;
+  color: white;
+}
+.hospital-doctor-data-personal .hospital-data .data-work label {
+  color: var(--color-primary);
+  font-family: "bold";
+  font-size: 20px;
+  width: 70%;
+  margin-bottom: 20px;
+}
+.hospital-doctor-data-personal .hospital-data .data-work .form-group .form-control::placeholder {
+  color: var(--color-fourth);
+  font-family: "regular";
+  font-size: 13px;
+}
+.hospital-doctor-data-personal .hospital-data .data-work .append{
+  margin: 30px 0;
+}
+.hospital-doctor-data-personal .hospital-data .data-work .add {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: none;
+  width: 50%;
+  text-align: end;
+  font-family: 'regular';
+  transition: .3s;
+  text-decoration: none;
+  cursor: pointer;
+}
+.hospital-doctor-data-personal .hospital-data .data-work .append button:hover 
+{
+  font-family: 'bold';
+}
+.hospital-doctor-data-personal .hospital-time .available-time {
+  padding-top: 70px;
+}
+.hospital-doctor-data-personal .hospital-time .available-time h5 {
+  color: var(--color-primary);
+  font-family: "bold";
+}
+.hospital-doctor-data-personal .hospital-time .available-time p {
+  color: var(--color-fourth);
+  font-family: "regular";
+}
+.hospital-doctor-data-personal .hospital-time .available-time .day {
+  display: flex;
+  color: var(--color-fourth);
+  justify-items: center;
+  margin-top: 30px;
+}
+.hospital-doctor-data-personal .hospital-time .available-time .day h5 {
+  font-family: "regular";
+  color: var(--color-secound);
+  font-size: 18px;
+}
+.hospital-doctor-data-personal .hospital-time .available-time .day svg {
+  font-size: 16px;
+  margin-left: 5px;
+}
+.hospital-doctor-data-personal .hospital-time .available-time  .form-group .form-control{
+  width: fit-content;
+}
+.hospital-doctor-data-personal .hospital-time .available-time .append-day .form-group .form-control,
+.hospital-doctor-data-personal .hospital-time .available-time  .form-group .form-control{
+  border-radius: 10px;
+  border-color: var(--color-fourth);
+  font-family: "regular";
+  width: 50%;
+}
+
+.hospital-doctor-data-personal .hospital-time .available-time  .form-group label{
+  color: var(--color-primary);
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-family: "bold"
+}
+.hospital-doctor-data-personal .hospital-time .available-time .append-day .form-group label {
+  color: var(--color-fourth);
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.hospital-doctor-data-personal .hospital-time .available-time .hasDatepicker{
+  width: 50%;
+  border-radius: 10px;
+  border: 1px solid var(--color-fourth);
+  height: 38px;
+}
+.hospital-doctor-data-personal .hospital-time .available-time form p{
+  color: var(--color-primary);
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-family: "bold";
+}
+.hospital-doctor-data-personal .hospital-time .available-time .append-day .append-btn-day {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: none;
+  width: 5%;
+  height: 0px;
+  text-align: end;
+  padding: 0;
+  margin: 0 600px 15px 0;
+  font-size: 16px;
+  font-family: 'regular';
+  transition: .3s;
+  text-decoration: none;
+  cursor: pointer;
+}
+.hospital-doctor-data-personal .hospital-time .available-time .append-day .append-btn-day:hover {
+  font-family: 'bold'
+}
+.hospital-doctor-data-personal .hospital-time .available-time .append-day .form-group label svg {
+  margin-left: 10px;
+  color: var(--color-primary);
+}
+
+ /* --------------------------finish hospital Doctor Personal------------------------- */
+
+@media only screen and (max-width: 991.98px){
+
+  /* --------------------------start Al Safwa Specialized hospital-doctor------------------------- */
+  .hospital-datawork .hospital-upload h1{
+      margin: 25px 30px 0 0;
+      top: 102px;
+      font-size: 33px;
+  }
+  .hospital-datawork .hospital-upload .avatar-preview{
+    height: 400px;
+    object-fit: cover;
+  }
+  .hospital-datawork .hospital-upload .avatar-edit svg{
+    top: 36px;
+    left: 1px;
+    font-size: 30px;
+  }
+  .hospital-datawork .hospital-tabs .tab-pane .feed-back .heading{
+      margin-top: 40px;
+    }
+    .hospital-datawork .hospital-tabs .tab-pane .feed-back .heading h4,
+    .hospital-datawork .hospital-tabs .tab-pane .workplace .heading h4,
+    .hospital-datawork .hospital-tabs .tab-pane .detials h5,
+    .hospital-datawork .hospital-tabs .tab-pane .instruction h5,
+    .hospital-datawork .hospital-tabs .tab-pane .hospital-rate h4{
+      font-size: 35px;
+    }
+   
+    .hospital-datawork .hospital-tabs .tab-pane .my-timetable .heading h4{
+      font-size: 32px;
+    }
+    .hospital-datawork .hospital-tabs .tab-pane .my-timetable .hospital-detection-date .form-check-label,
+    .hospital-datawork .hospital-tabs .tab-pane .feed-back .first, .hospital-datawork .hospital-tabs .tab-pane .feed-back .second{
+      font-size: 20px;
+    }
+    .hospital-datawork .hospital-tabs .tab-pane .feed-back .heading img,
+    .hospital-datawork .hospital-tabs .tab-pane .workplace .heading img,
+    .hospital-datawork .hospital-tabs .tab-pane .my-timetable .heading img{
+      width: 75%;
+      margin-left: 10px;
+    }
+    .hospital-datawork .hospital-tabs .tab-pane .feed-back h6{
+      font-size: 25px;
+    }
+    .hospital-datawork .hospital-tabs .tab-pane .feed-back p{
+      font-size: 24px;
+    }
+    .hospital-datawork .hospital-tabs .tab-pane .feed-back .img .coll{
+      width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0;
+    }
+    .hospital-datawork .hospital-tabs .tab-pane .feed-back .img .coll li img{
+      margin-bottom: 12px;
+    }
+    .hospital-datawork .hospital-tabs .tab-pane .workplace h5,
+    .hospital-datawork .hospital-tabs .service .main-heading h5,
+    .hospital-datawork .hospital-tabs .tab-pane .detials h6,
+    .hospital-datawork .hospital-tabs .nav-tabs .nav-link,
+    .hospital-datawork .hospital-tabs .tab-pane .main-rate p,
+    .hospital-datawork .hospital-tabs .tab-pane .hospital-cards h5{
+      font-size: 22px;
+    }
+    .hospital-datawork .hospital-tabs .nav-tabs {
+      width: 100%;
+      padding: 30px;
+    }
+    .hospital-datawork .hospital-tabs .workplace ul{
+      width: 100%;
+      margin: 20px 0;
+      padding-right: 0;
+    }
+    .hospital-datawork .hospital-tabs .workplace ul li{
+      width: 45%;
+      margin-top: 7px;
+    }
+    .hospital-datawork .hospital-tabs .workplace ul li h6{
+      font-size: 11px;
+    }
+    .hospital-datawork .hospital-tabs .workplace ul li .location p{font-size: 10px;}
+    .hospital-datawork .hospital-tabs .service .coll{
+      padding-right: 0;
+      margin: 23px 0;
+    }
+    .hospital-datawork .hospital-tabs .service .coll li{
+      margin-bottom: 26px;
+    }
+    .hospital-datawork .hospital-tabs .service .coll a,
+    .hospital-datawork .hospital-tabs .tab-pane .detials .location p,
+    .hospital-datawork .hospital-tabs .tab-pane .instruction li{
+      font-size: 24px;
+    }
+    .hospital-datawork .hospital-tabs .tab-pane .detials .location svg{
+      font-size: 25px;
+      margin-left: 27px;
+    }
+    .hospital-datawork .hospital-tabs .nav-tabs .nav-link, 
+    .hospital-datawork .hospital-tabs .nav-tabs .nav-link.active{
+      height: 100px;
+     padding: 32px;
+     font-size: 25px;
+    }
+    .hospital-datawork .hospital-tabs .nav-tabs{
+      margin-bottom: 27px;
+    }
+    .hospital-datawork .hospital-tabs .tab-pane .hospital-rate .heading svg{
+      margin-left: 18px;
+        font-size: 40px;
+    }
+    .hospital-datawork .hospital-tabs .tab-pane .hospital-rate .heading{
+      margin:0;
+    }
+    .hospital-datawork .hospital-tabs .tab-pane .main-rate{
+      margin-top: 22px;
+    }
+    .hospital-datawork .hospital-tabs .tab-pane .main-rate svg{
+      font-size: 24px;
+        margin-bottom: 11px;
+    }
+    .hospital-datawork .hospital-tabs .tab-pane .hospital-cards{
+      width: 100%;
+        margin: 20px auto 20px;
+    }
+    .hospital-datawork .hospital-tabs .tab-pane .hospital-cards svg{
+      font-size: 22px;
+    }
+    .hospital-datawork .hospital-tabs .tab-pane .hospital-cards p{
+      width: 100%;
+      font-size: 22px;
+    }
+    .hospital-datawork .hospital-tabs .tab-pane .hospital-cards h6{
+      font-size: 17px;
+    }
+    .hospital-datawork .hospital-tabs .tab-pane .hospital-doctor .input-group span{
+      left: 93%;
+      top: 20px;
+  
+    }
+    .hospital-datawork .hospital-tabs .tab-pane .hospital-doctor .input-group span svg{
+       font-size: 26px;
+       color: var(--color-secound);
+    }
+    .hospital-datawork .hospital-tabs .tab-pane .hospital-doctor .input-group{
+      width: 100%;
+    }
+    .hospital-datawork .hospital-tabs .tab-pane .hospital-doctor .input-group .form-control{
+      height: fit-content;
+    border-radius: 15px;
+    padding: 3%;
+    }
+    .hospital-datawork .hospital-tabs .tab-pane .hospital-doctor .input-group .form-control::placeholder{
+      font-size:25px ;
+      color: var(--color-secound);
+    }
+    .hospital-datawork .hospital-tabs .tab-pane .hospital-doctor .header{
+      flex-direction: row;
+      margin-bottom: 30px;
+    }
+    .hospital-datawork .hospital-tabs .tab-pane .hospital-doctor .head .form-control{
+      font-size: 21px;
+      margin-right: 0;
+      height: fit-content;
+    }
+    .hospital-datawork .hospital-tabs .tab-pane .hospital-doctor .head .form-control option{
+      font-size: 12px;
+    }
+    .hospital-datawork .hospital-tabs .tab-pane .hospital-doctor .header button{
+      width: 30% !important;
+      font-size: 24px;
+     
+    }
+    .hospital-datawork .hospital-tabs .tab-pane .hospital-doctor .doctor-box .doctor-card{
+      width: 45%;
+    }
+    .hospital-datawork .hospital-tabs .tab-pane .hospital-doctor .doctor-box .doctor-card h6{
+      font-size: 22px;
+    }
+   
+    .hospital-datawork .hospital-tabs .tab-pane .hospital-doctor .head svg{
+      margin-left: 5px;
+    }
+    .hospital-datawork .hospital-tabs .tab-pane .img img{
+      height: 442px;
+    }
+    .hospital-datawork .hospital-tabs .tab-pane .my-timetable .hospital-detection-date .form-check{
+      width: 22% !important;
+    }
+    .hospital-datawork .hospital-tabs .tab-pane .my-timetable .hospital-detection-date .form-control{
+      font-size: 18px;
+    }
+  /* --------------------------finish Al Safwa Specialized Hospital------------------------- */
+  /* --------------------------start  Hospital Personal Data------------------------- */
+  
+  .hospital-personal-data .nav-pills {
+    display: flex;
+    flex-direction: row!important;
+    width: 100%;
+   border-left: none;
+   flex-wrap: wrap;
+   justify-content: center;
+  justify-items: center;
+  margin: 0 auto;
+  }
+  .hospital-personal-data .nav-pills .nav-link{
+    display: inline-block;
+    width: 45%;
+    font-size: 36px;
+  }
+  .hospital-personal-data .nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+    border-left: none;
+    border-bottom: 4px solid var(--color-primary);
+    height: 100px;  
+  }
+  .hospital-personal-data .hospital-personal .avatar-preview{
+    width: 260px;
+    height: 260px;
+  }
+  .hospital-personal-data .tab-content{
+    padding: 0;
+  }
+    .hospital-personal-data .hospital-personal .personal {
+      margin: -20px auto 0;
+    }
+    .hospital-personal-data .hospital-personal .avatar-upload {
+      margin: 75px auto;
+    }
+    .hospital-personal-data .hospital-personal .tab-content form .form-control {
+      width: 90%;
+      padding: 1%;
+      margin-bottom: 20px;
+      font-size: 12px;
+    }
+    .hospital-personal-data .hospital-personal .tab-content form .form-control::placeholder{
+      font-size: 20px !important;
+    }
+    .hospital-personal-data .hospital-personal .tab-content form .form-control, 
+    .hospital-personal-data .hospital-personal .tab-content form .append-day .form-group .field{
+      font-size: 20px;
+    }
+    .hospital-personal-data .hospital-personal .tab-content form .btn-block,
+    .hospital-personal-data .hospital-personal .tab-content .anther {
+      width: 50%;
+      font-size: 25px;
+    }
+    .hospital-personal-data .hospital-personal .available-time p {
+      font-size: 21px;
+    }
+    .hospital-personal-data .hospital-personal .available-time .form-group {
+      width: 80%;
+    }
+    .hospital-personal-data .hospital-personal .available-time .form-group .minute {
+      padding: 3px;
+      width: 50%;
+    }
+    .hospital-personal-data .hospital-personal .available-time .morning-time .form-check,
+    .hospital-personal-data .hospital-personal .available-time .night-time .form-check {
+      width: 50%;
+    }
+    .hospital-personal-data .hospital-personal .tab-content form label,
+    .hospital-personal-data .hospital-personal .available-time form p{
+      font-size: 26px;
+    }
+    .hospital-personal-data .hospital-personal .location .manual-search {
+      width: 95%;
+      left: 0px;
+      padding: 9px;
+      bottom: 0;
+      top: 0;
+      margin: 32px auto;
+    }
+    .hospital-personal-data .hospital-personal .data-work .add{
+      width: 75%;
+      font-size: 20px;
+    }
+    .hospital-personal-data .hospital-personal .available-time .append-day .append-btn-day{ 
+      font-size: 29px;
+    }
+    .hospital-personal-data .hospital-personal .available-time h5{
+      font-size: 30px;
+    }
+    .hospital-personal-data .hospital-personal .available-time .day h5{
+      font-size: 27px;
+    }
+    .hospital-personal-data .hospital-personal .available-time .day svg{
+      font-size: 22px;
+  
+    }
+    .hospital-personal-data .hospital-personal .embed-responsive-item{
+      width: 100%;
+    }
+    .hospital-personal-data .hospital-personal .location .manual-search form .form-control,
+     .hospital-personal-data .hospital-personal .location .manual-search form .form-control::placeholder{
+       padding-bottom: 3px;
+       font-size: 20px;
+     }
+     .hospital-personal-data .hospital-personal .available-time .append-day .form-group label{
+       margin-top: 0;
+       font-size: 22px;
+      }
+      .hospital-personal-data .hospital-personal .location .manual-search form button{
+        width: 40%;
+    padding: 1% 0;
+    margin-top: 15px;
+      }
+  /* --------------------------finish  Hospital Personal Data------------------------- */
+  /* --------------------------start  Hospital Profile------------------------- */
+  .hospital-doctor-datawork .hospital-doctor-upload h1{
+    margin: 25px 30px 0 0;
+    top: 82px;
+    font-size: 35px;
+  }
+  .hospital-doctor-datawork .hospital-doctor-upload .avatar-edit svg{
+    font-size: 40px;
+  }
+   .hospital-doctor-datawork .hospital-doctor-upload .avatar-preview{
+  height: 200px;
+  }
+   .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .feed-back .heading{
+    margin-top: 40px;
+  }
+   .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .feed-back .heading h4,
+   .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .workplace .heading h4,
+   .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .detials h5,
+   .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .instruction h5,
+   .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .hospital-doctor-rate h4{
+    font-size: 37px;
+  }
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .my-timetable .heading h4{
+    font-size: 32px;
+  }
+   .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .feed-back .heading img,
+   .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .workplace .heading img,
+   .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .my-timetable .heading img{
+    width: 100%;
+  }
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .feed-back .spec{
+    font-size: 20PX;
+  }
+   .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .feed-back h6{
+    font-size: 22px;
+  }
+   .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .feed-back p{
+    font-size: 20px;
+  }
+   .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .feed-back .img .coll{
+    width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0;
+  }
+  .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .workplace p{
+    width: 80%;
+    font-size: 22px;
+  }
+   .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .feed-back .img .coll li img{
+    margin-bottom: 12px;
+  }
+   .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .workplace h5,
+   .hospital-doctor-datawork .hospital-doctor-tabs .service .main-heading h5,
+   .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .detials h6,
+   .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .main-rate p,
+   .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .hospital-doctor-cards h5{
+    font-size: 20px;
+  }
+   .hospital-doctor-datawork .hospital-doctor-tabs .workplace ul{
+    width: 100%;
+    margin: 20px 0;
+    padding-right: 0;
+  }
+   .hospital-doctor-datawork .hospital-doctor-tabs .workplace ul li{
+    width: 45%;
+    margin-top: 7px;
+  }
+   .hospital-doctor-datawork .hospital-doctor-tabs .workplace ul li h6{
+    font-size: 11px;
+  }
+   .hospital-doctor-datawork .hospital-doctor-tabs .workplace ul li .location p{font-size: 10px;}
+   .hospital-doctor-datawork .hospital-doctor-tabs .service .coll{
+    padding-right: 0;
+    margin: 23px 0;
+  }
+   .hospital-doctor-datawork .hospital-doctor-tabs .service .coll li{
+    margin-bottom: 26px;
+  }
+   .hospital-doctor-datawork .hospital-doctor-tabs .service .coll a,
+   .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .detials .location p,
+   .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .instruction li{
+    font-size: 24px;
+  }
+   .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .detials .location svg{
+    font-size: 24px;
+    margin-left: 22px;
+  }
+   .hospital-doctor-datawork .hospital-doctor-tabs .nav-tabs .nav-link, 
+   .hospital-doctor-datawork .hospital-doctor-tabs .nav-tabs .nav-link.active{
+    font-size: 28px;
+  }
+   .hospital-doctor-datawork .hospital-doctor-tabs .nav-tabs{
+    margin-bottom: 27px;
+  }
+   .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .hospital-doctor-rate .heading svg{
+    margin-left: 13px;
+    font-size: 39px;
+  }
+   .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .hospital-doctor-rate .heading{
+    margin:0;
+  }
+   .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .main-rate{
+    margin-top: 22px;
+  }
+   .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .main-rate svg{
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+   .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .hospital-doctor-cards{
+    width: 100%;
+      margin: 20px auto 20px;
+  }
+   .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .hospital-doctor-cards svg{
+    font-size: 12px;
+  }
+   .hospital-doctor-datawork .hospital-doctor-tabs .tab-pane .hospital-doctor-cards p{
+    width: 100%;
+    font-size: 10px;
+  }
+  /* --------------------------finish  Hospital profile------------------------- */
+  /* --------------------------start  Hospital date ------------------------- */
+  .hospital-all-data .nav-pills {
+    display: flex;
+    flex-direction: row!important;
+    width: 100%;
+   border-left: none;
+   flex-wrap: wrap;
+   justify-content: center;
+  justify-items: center;
+  margin: 0 auto;
+  }
+  .hospital-all-data .nav-pills .nav-link{
+    display: inline-block;
+    width: 30%;
+    font-size: 24px;
+  }
+  .hospital-all-data .nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+    border-left: none;
+    border-bottom: 4px solid var(--color-primary);
+    height: 80px;
+  }
+   
+  .hospital-all-data table.table-bordered tbody td button {
+    padding: 6% 0%;
+    width: 100%;
+    font-size: 16px;
+  }
+  .hospital-all-data .tab-content table.table-bordered .cancel,
+  .hospital-all-data .tab-content table.table-bordered .delay {
+    width: 80%;
+    padding: 6% 0;
+  }
+  .hospital-all-data .modal-content{
+    width: fit-content;
+  }
+  .hospital-all-data .modal-header{
+    width:100%;
+  }
+  .hospital-all-data .modal-header .close{
+      width: 50%;
+  }
+  .hospital-all-data .modal-header .close span{
+    margin-right: 40px;
+    font-size: 45px;
+  }
+  .hospital-all-data .modal-body h5{
+    font-size: 25px;
+  }
+  .hospital-all-data .modal-body .details {
+  width: 94%;
+  padding: 1% 1% 1% 10%;
+  }
+  .hospital-all-data .modal-body .details .detail img{
+    width: 146px;
+    margin-left: 7px;
+  }
+  .hospital-all-data .modal-body .details .detail p{
+    font-size: 20px;
+  }
+  .hospital-all-data .modal-body .text p{
+    width: 70%;
+    font-size: 25px;
+  }
+  .hospital-all-data .modal-footer .btn-success{
+    width: 48%;
+    font-size: 27px;
+  }
+  .hospital-all-data .modal-body h6{
+    font-size: 18px;
+  }
+  .hospital-all-data .modal-body .location p{
+    font-size: 20px;
+  }
+  .hospital-all-data .modal-header .modal-title{
+    font-size: 32px;
+  }
+  .hospital-all-data .modal-body .text h6{
+    font-size: 16px;
+  }
+  .hospital-all-data .modal-footer .btn-danger{
+    font-size: 27px;
+  }
+  .hospital-all-data .tab-content table.table-bordered .btn-warning{
+    width: 95%;
+    padding: 6% 0;
+    font-size: 16px;
+  }
+   .table-bordered thead .details h5{
+    font-size: 16px;
+  }
+  .hospital-all-data table.table-bordered tbody td{
+    margin: auto;
+    font-size: 16px;
+  }
+  .hospital-all-data .tab-content table.table-bordered .accepted h6,
+  .hospital-all-data .tab-content table.table-bordered .refused h6{
+    font-size: 16px;
+    width: 100%;
+    padding: 6% 1%;
+   margin: 3px auto ;
+  }
+  .hospital-all-data .tab-content table.table-bordered .delay-time .form-check-label{
+    font-size: 8px;
+  }
+  .hospital-all-data .tab-content table.table-bordered .delay-time .form-check{
+    padding: 1% 2%;
+  }
+   .table-bordered thead .details svg{
+    font-size: 16px;
+  }
+  /* --------------------------finish  Hospital date ------------------------- */
+  /* --------------------------start Hospital Doctor Personal  ------------------------- */
+  .hospital-doctor-data-personal .nav-pills {
+    display: flex;
+    flex-direction: row!important;
+    width: 100%;
+   border-left: none;
+   flex-wrap: wrap;
+   justify-content: center;
+  justify-items: center;
+  margin: 0 auto;
+  }
+  .hospital-doctor-data-personal .nav-pills .nav-link{
+    display: inline-block;
+    width: 30%;
+    font-size: 24px ;
+  
+  }
+  .hospital-doctor-data-personal .nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+    border-left: none;
+    border-bottom: 4px solid var(--color-primary);
+    height: 80px;
+
+  }
+  .hospital-doctor-data-personal .hospital-personal input + label{
+    width: 50px;
+    height: 50px;
+
+  }
+  .hospital-doctor-data-personal .hospital-personal input + label:after{
+   
+  }
+  .hospital-doctor-data-personal .hospital-personal .avatar-preview{
+    height: 230px;
+    width: 230px;
+  }
+  .hospital-doctor-data-personal .hospital-personal .personal {
+    margin: -20px auto 0;
+  }
+  .hospital-doctor-data-personal .hospital-personal .avatar-upload {
+    margin: 75px auto;
+  }
+  .hospital-doctor-data-personal .hospital-personal .tab-content form .form-control {
+    width: 90%;
+    padding: 5%;
+  }
+  .hospital-doctor-data-personal .hospital-personal form .form-control::placeholder{
+    font-size: 20px;
+  }
+  .hospital-doctor-data-personal .hospital-personal  form .btn-block,
+  .hospital-doctor-data-personal .hospital-personal  .anther {
+    width: 50%;
+    font-size: 30px;
+  }
+  .hospital-doctor-data-personal  .available-time p {
+    font-size: 27px;
+  }
+  .hospital-doctor-data-personal  .available-time .form-group {
+    width: 80%;
+  }
+  .hospital-doctor-data-personal  .available-time .form-group .minute {
+    padding: 3px;
+    width: 50%;
+  }
+  .hospital-doctor-data-personal  .available-time .morning-time .form-check,
+  .hospital-doctor-data-personal  .available-time .night-time .form-check {
+    width: 50%;
+  }
+  .hospital-doctor-data-personal   form .form-control {
+    margin-bottom: 20px;
+  }
+  .hospital-doctor-data-personal .hospital-personal  form label{
+    font-size: 28px;
+  }
+  
+  .hospital-doctor-data-personal .hospital-data .data-work .add{
+   
+    font-size: 20px;
+  }
+  .hospital-doctor-data-personal .hospital-time .available-time .append-day .append-btn-day{
+    font-size: 25px;
+  }
+  .hospital-doctor-data-personal .tab-content,
+  .hospital-doctor-data-personal .hospital-data .data-work{
+    padding-top: 0px;
+  }
+  .hospital-doctor-data-personal .hospital-time .available-time{
+    padding-top: 20px;
+  }
+  .hospital-doctor-data-personal .hospital-data .data-work .append .form-control,
+   .hospital-doctor-data-personal .hospital-data .data-work .form-control::placeholder{
+     font-size: 20px;
+   }
+   .hospital-doctor-data-personal .hospital-time .available-time h5{
+     font-size: 30px;
+   }
+   .hospital-doctor-data-personal .hospital-time .available-time form p,
+   .hospital-doctor-data-personal .hospital-time .available-time .form-group label{
+    font-size: 26px;
+   }
+   .hospital-doctor-data-personal .hospital-time .available-time p{
+     font-size: 24px;
+   }
+   .hospital-doctor-data-personal .hospital-time .available-time .hasDatepicker,
+   .hospital-doctor-data-personal .hospital-time .available-time .form-group .form-control{
+     font-size: 25px;
+     height: 54px;
+     width: 66%;
+
+   }
+   .hospital-doctor-data-personal .hospital-time .available-time .day h5{
+     font-size: 30px;
+   }
+   .hospital-doctor-data-personal .hospital-time .available-time .day svg{
+    font-size: 27px;
+    margin-left: 12px;
+   }
+   .hospital-doctor-data-personal .hospital-time .available-time .append-day .form-group .form-control,
+    .hospital-doctor-data-personal .hospital-time .available-time .form-group .form-control{
+      width: 66%;
+    }
+    .hospital-doctor-data-personal .hospital-time .available-time .append-day .form-group label{
+      font-size: 23px;
+    }
+  /* --------------------------finish  Hospital Doctor Personal   ------------------------- */
+  /* --------------------------start  add doctor  ------------------------- */
+  .add-doc-hospital .heading h4{
+    font-size: 33px;
+    bottom: 86px;
+    margin-left: 69px;
+  }
+
+  .add-doc-hospital p{
+  font-size: 40px;
+  margin-bottom: 0;
+  }
+  .add-doc-hospital .add-doc-hospital-data .avatar-upload{
+    margin: 30px auto;
+  }
+  .add-doc-hospital .add-doc-hospital-data form .form-group label{
+    font-size: 21px;
+    margin-top: 11px;
+
+  }
+  .add-doc-hospital .add-doc-hospital-data form .form-group .form-control,
+  .add-doc-hospital .add-doc-hospital-data form .form-group .form-control::placeholder {
+  font-size: 21px;
+  height: 60px;
+  }
+  .add-doc-hospital .heading img{
+    height: 130px;
+  }
+  .add-doc-hospital .add-doc-hospital-data .avatar-preview{
+    width: 200px;
+    height: 200px;
+  }
+  .add-doc-hospital .add-doc-hospital-data form button{
+    width: 65%;
+    font-size: 25px;
+  }
+  /* --------------------------finish  add doctor   ------------------------- */
+  
+  }
+  /*--------------------------------------------------------- finish hospital section----------------------------- */
